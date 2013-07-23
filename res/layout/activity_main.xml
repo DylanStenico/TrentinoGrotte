@@ -1,0 +1,53 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/eu.fbk.fse.trentinogrotte"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grotte"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="@string/caveList" />
+
+    <Button
+        android:id="@+id/btGMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btToList"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/toGMap" />
+
+    <Button
+        android:id="@+id/btOSMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btGMap"
+        android:layout_alignBottom="@+id/btGMap"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="31dp"
+        android:text="@string/osMap" />
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="a151ecf73180c40"
+        ads:loadAdOnCreate="true" >
+    </com.google.ads.AdView>
+
+</RelativeLayout>

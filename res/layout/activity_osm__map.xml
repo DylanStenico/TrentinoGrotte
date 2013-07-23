@@ -1,0 +1,44 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Osm_Map" >
+
+<!--     <org.osmdroid.views.MapView -->
+	<eu.trentorise.smartcampus.osm.android.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        android:id="@+id/btMyLocation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btConferma"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btMyLocation"
+        android:layout_alignBottom="@+id/btMyLocation"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/vuota" />
+
+    <EditText
+        android:id="@+id/txtFieldInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btMyLocation"
+        android:layout_alignBottom="@+id/btMyLocation"
+        android:layout_toLeftOf="@+id/btConferma"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/text_here" />
+
+</RelativeLayout>
